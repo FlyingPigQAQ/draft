@@ -118,3 +118,11 @@ git checkout commit_id file...
 ```
 >Example:
 git checkout HEAD~1 app-services/pom.xml
+## git rebase
+git rebase master -i HEAD~4
+## git symbolic-ref HEAD
+>查看HEAD位置  
+## git branch -f master HEAD~3
+> 强制将master分支移动到曾祖父节点  
+## git revert HEAD
+>git reset HEAD~1 只能回撤本地分支,git revert HEAD是通过将HEAD提交的父节点，重新commit，通过push到远程实现远程分支的回退
